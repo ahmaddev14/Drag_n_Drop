@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(135deg, #373B44, #4286f4);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.imgBox {
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  cursor: grab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgBox:hover {
+  transform: scale(1.05) rotate(3deg);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.whiteBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 2px dashed #ddd;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whiteBox:hover,
+.whiteBox.hovered {
+  border-color: #4286f4;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.hold {
+  border: 2px solid #4286f4;
+}
+
+.hide {
+  display: none;
+}
